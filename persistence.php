@@ -19,7 +19,7 @@ require_once 'guard.php';
             'Guardar y mostrar eventos de rastreo de paquetes usando una base de datos SQLite desde PHP.',
             [
                 'Crea un archivo llamado <code>ejercicio7.php</code>.',
-                'Conéctate a una base de datos llamada <code>eventos.db</code> usando <code>PDO</code>.',
+                'Conéctate a una base de datos llamada <code>database.db</code> usando <code>PDO</code>.',
                 'Crea una tabla llamada <code>eventos</code> (si no existe) con los siguientes campos:',
                 '<ul>
             <li><code>id</code> (entero, auto_increment)</li>
@@ -31,7 +31,7 @@ require_once 'guard.php';
                 'Después del formulario, muestra los eventos registrados con <code>echo</code>.',
             ],
             [
-                '<strong>Conexión SQLite:</strong> <code>new PDO("sqlite:eventos.db")</code>',
+                '<strong>Conexión SQLite:</strong> <code>new PDO("sqlite:database.db")</code>',
                 '<strong>Insertar:</strong> <code>prepare()</code> + <code>execute()</code>',
                 '<strong>Leer:</strong> <code>query()</code> + <code>fetchAll()</code>',
                 '<a href="https://www.php.net/manual/es/book.pdo.php" target="_blank">📘 Manual de PDO</a>'

@@ -15,11 +15,11 @@ $contenido = file_get_contents($archivo);
 $puntos = 0;
 $errores = [];
 
-// 1. Verifica conexión con SQLite y base eventos.db
-if (strpos($contenido, 'new PDO("sqlite:eventos.db")') !== false) {
+// 1. Verifica conexión con SQLite
+if (strpos($contenido, 'new PDO("sqlite:database.db")') !== false) {
     $puntos++;
 } else {
-    $errores[] = 'Debes conectarte usando <code>new PDO("sqlite:eventos.db")</code>.';
+    $errores[] = 'Debes conectarte usando <code>new PDO("sqlite:database.db")</code>.';
 }
 
 // 2. Verifica creación de tabla eventos
