@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - HTML</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="icon" type="image/png" href="https://app.enviosperros.com/images/logo/fav-2.png" sizes="16x16">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #006afe;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #006afe;
+        }
+    </style>
+</head>
+<body>
+    <form action="ejercicio4.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre completo"><br>
+        <input type="email" name="correo" placeholder="Correo electrónico"><br>
+        <input type="text" name="telefono" placeholder="Teléfono"><br>
+        <input type="text" name="calle" placeholder="Calle"><br>
+        <input type="text" name="numero_ext" placeholder="Número exterior"><br>
+        <input type="text" name="colonia" placeholder="Colonia"><br>
+        <input type="text" name="codigo_postal" placeholder="Código postal"><br>
+        <input type="text" name="referencias" placeholder="Referencias adicionales"><br>
+        <input type="submit" value="Enviar dirección">
+    </form>
+</body>
+</html>

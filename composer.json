@@ -1,0 +1,11 @@
+{
+  "name": "bootcamp/modulo_4",
+  "description": "Ejercicios para la clase de PHP",
+  "require": {
+    "ext-pdo_sqlite": "*",
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": { "App\\": "src/" }
+  }
+}
